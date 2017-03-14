@@ -16,7 +16,7 @@
         android:layout_alignParentTop="true"
         android:orientation="vertical"
         android:padding="0dp">
-
+        <!--
         <TextView
             android:id="@+id/textLeftOp"
             android:layout_width="match_parent"
@@ -29,7 +29,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingLeft="20dp"
-            android:textSize="36sp" />
+            android:textSize="36sp" />-->
 
         <TextView
             android:id="@+id/textResult"
@@ -80,7 +80,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:background="@android:color/background_dark"
+                android:background="#171717"
                 android:text="÷"
                 android:textColor="@android:color/holo_red_light"
                 android:textSize="30sp" />
@@ -128,8 +128,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:background="@android:color/background_dark"
-                android:text="x"
+                android:background="#171717"
+                android:text="×"
                 android:textColor="@android:color/holo_red_light"
                 android:textSize="30sp" />
 
@@ -176,8 +176,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:background="@android:color/background_dark"
-                android:text="-"
+                android:background="#171717"
+                android:text="&#8722;"
                 android:textColor="@android:color/holo_red_light"
                 android:textSize="30sp" />
         </LinearLayout>
@@ -223,7 +223,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:background="@android:color/background_dark"
+                android:background="#171717"
                 android:text="+"
                 android:textColor="@android:color/holo_red_light"
                 android:textSize="30sp" />
@@ -265,9 +265,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="@android:color/background_dark"
+                android:background="@android:color/holo_orange_dark"
                 android:text="="
-                android:textColor="@android:color/holo_red_light"
+                android:textColor="#323232"
                 android:textSize="30sp" />
         </LinearLayout>
 
