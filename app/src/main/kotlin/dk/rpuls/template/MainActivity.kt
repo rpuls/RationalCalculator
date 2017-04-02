@@ -1,4 +1,4 @@
-package dk.cphbusiness.template
+package dk.rpuls.template
 
 import android.app.Activity
 import android.os.Bundle

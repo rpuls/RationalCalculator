@@ -1,4 +1,4 @@
-package dk.cphbusiness.template;
+package dk.rpuls.template;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

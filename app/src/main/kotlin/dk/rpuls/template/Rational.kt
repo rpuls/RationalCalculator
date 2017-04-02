@@ -1,4 +1,4 @@
-package dk.cphbusiness.template
+package dk.rpuls.template
 
 /**
  * Created by rasmus on 21-Feb-17.
