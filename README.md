@@ -120,7 +120,7 @@ a(i_1, …, i_n)|	a.invoke(i_1, …, i_n)
 
 ## Compared to Java
 
-First of all Java doesn’t support user defined operator overloading, they choose to exclude it from the language as they felt it was abused in c++ and produced less readable code. When you are a mathematician you might focus more on the equation than the actual code.
+First of all Java doesn’t support user defined operator overloading, they choose to exclude it from the language as they felt it was abused in c++ and produced less readable code. When you are a mathematician you might focus more on the equation than the actual code but if you want the correct notation like in physics or math then it might come in handy with operator overloading.
 
 Example - Operator overloading abuse
 
@@ -160,7 +160,7 @@ System.out.println(i+j); //Evaluates to 3
 }
 ```
 
-Operator overloading might not be necessary in java as you can just simulate it using method overloading. But if you want the correct notation like in physics or math then it might come in handy with operator overloading.
+Operator overloading might not be necessary in java as you can just simulate it using method overloading.
 
 Example - Overloading in java
 
