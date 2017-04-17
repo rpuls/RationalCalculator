@@ -14,5 +14,12 @@ If we want to overload this, we need write a function which we map. The function
 
 a.plus(b) 
 
-To overload the 
+To overload the operator we now need to implement our function as this:
+```kotlin
+operator fun div(other: Rational) :Rational {
+        val div = gcd(this.n * other.d,this.d * other.n)
+        return Rational((this.n * other.d)/div, (this.d * other.n)/div)
+    }
+```
+
 
