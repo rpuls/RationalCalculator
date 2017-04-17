@@ -58,9 +58,9 @@ In this example we use the built-in class and overload the times operator for th
 As stated previously overloading can only be done on the prefixed operators.
 
 ### Unary operations
-|--|--|
-|+a|	a.unaryPlus()|
-|-a|	a.unaryMinus()|
+| -- | -- |
+| +a |	a.unaryPlus() |
+|-a |	a.unaryMinus() |
 !a	a.not()
 a++	a.inc()
 a–	a.dec()
