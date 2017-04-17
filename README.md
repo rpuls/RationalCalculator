@@ -67,7 +67,7 @@ As stated previously overloading can only be done on the prefixed operators.
 a++|	a.inc()
 a–|	a.dec()
 
-## Binary operations
+### Binary operations
 
 | symbol | something |
 | --- | --- |
@@ -85,7 +85,7 @@ a *= b|	a.timesAssign(b)
 a /= b|	a.divAssign(b)
 a %= b|	a.modAssign(b)
 
-## Array-like operations
+### Array-like operations
 
 | symbol | something |
 | --- | --- |
@@ -95,3 +95,10 @@ a[i_1, …, i_n]|	a.get(i_1, …, i_n)
 a[i] = b|	a.set(i, b)
 a[i, j] = b|	a.set(i, j, b)
 a[i_1, …, i_n] = b|	a.set(i_1, …, i_n, b)
+
+### Equals operation
+
+| symbol | something |
+| --- | --- |
+a == b|	a?.equals(b) ?: b === null
+a != b|	!(a?.equals(b) ?: b === null)
