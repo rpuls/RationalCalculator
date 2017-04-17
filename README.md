@@ -39,7 +39,8 @@ val c = Complex(1, 0) + Complex(0, 1) // = Complex(1, 1)
 
 Another simplified example would be to access a member list inside a member dataclass overloading the operator get().
 
-```data class MyMembers(val memberList: List<Member>) {
+```
+data class MyMembers(val memberList: List<Member>) {
  operator fun get(pos: Int):  = memberList[pos]
 }
 ```
