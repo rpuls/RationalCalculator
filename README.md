@@ -47,4 +47,19 @@ data class MyMembers(val memberList: List<Member>) {
 Now we are able to access the memberlist using `MyMembers[4]` instead of `MyMembers.memberList[4]`
 
 ## Operator Overloading in Extention functions
+There is also a possibility of using Operator Overloading with class extensions. Lets take the Rational Calculator Example again:
 
+```kotlin
+operator fun Int.times(r: Rational) = Rational(this,1) * r
+```
+In this example we use the built-in class and overload the times operator for that excact type using an extension function and we can now...
+
+## Operator tables
+As stated previously overloading can only be done on the prefixed operators.
+
+### Unary operations
+|+a|	a.unaryPlus()|
+|-a|	a.unaryMinus()|
+!a	a.not()
+a++	a.inc()
+a–	a.dec()
