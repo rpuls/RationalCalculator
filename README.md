@@ -65,7 +65,7 @@ As stated previously overloading can only be done on the prefixed operators.
 
 ### Unary operations
 
-| symbol | something |
+| Expression | Translated to |
 | --- | --- |
 | +a |	a.unaryPlus() |
 |-a |	a.unaryMinus() |
@@ -75,7 +75,7 @@ a–|	a.dec()
 
 ### Binary operations
 
-| symbol | something |
+| Expression | Translated to |
 | --- | --- |
 a + b |	a.plus(b)
 a – b|	a.minus(b)
@@ -93,7 +93,7 @@ a %= b|	a.modAssign(b)
 
 ### Array-like operations
 
-| symbol | something |
+| Expression | Translated to |
 | --- | --- |
 a[i]|	a.get(i)
 a[i, j]|	a.get(i, j)
@@ -104,14 +104,14 @@ a[i_1, …, i_n] = b|	a.set(i_1, …, i_n, b)
 
 ### Equals operation
 
-| symbol | something |
+| Expression | Translated to |
 | --- | --- |
 a == b|	a?.equals(b) ?: b === null
 a != b|	!(a?.equals(b) ?: b === null)
 
 ### Function invocation
 
-| symbol | something |
+| Expression | Translated to |
 | --- | --- |
 a(i)|	a.invoke(i)
 a(i, j)|	a.invoke(i, j)
