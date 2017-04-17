@@ -116,3 +116,71 @@ a != b|	!(a?.equals(b) ?: b === null)
 a(i)|	a.invoke(i)
 a(i, j)|	a.invoke(i, j)
 a(i_1, …, i_n)|	a.invoke(i_1, …, i_n)
+
+
+## Compared to Java
+
+First of all Java doesn’t support user defined operator overloading, they choose to exclude it from the language as they felt it was abused in c++ and produced less readable code. However it is a built in feature in java.
+Example - Operator overloading in java
+
+```java
+public static void main(String[] args) {
+	String a = "Hello";
+	String b = " world";
+		
+	int i = 1;
+	int j = 2;
+		
+	//When adding Strings java uses string concatenation.
+		
+	System.out.println(a+b);
+		
+	//When adding int's java uses math.
+		
+System.out.println(i+j);
+}
+```
+Example - Operator overloading abuse
+
+```java
+public static void main(String[] args) {
+	String a = "abe";
+	String b = "gorilla";
+		
+	int i = 1;
+	int j = 2;
+		
+	//In math a+b == b+a but is violated in String concatenation.
+		
+	System.out.println(a+b==b+a); //Evaluates to false
+	System.out.println(i+j==j+i); //Evaluates to true
+}
+```
+Example - Overloading in java
+
+```java
+public static void main(String[] args) {
+		
+		int a = 1;
+		int b = 2;
+		
+		Rational r1 = new Rational(1, 4);
+		Rational r2 = new Rational(1, 4);
+		
+		System.out.println(plus(a, b).toString());
+		System.out.println(plus(r1, r2).toString());
+	}
+
+	static Rational plus(int a, int b){
+		return new Rational(a+b, 1);
+	}
+
+	static Rational plus(Rational a, Rational b){
+		if(a.getD()==b.getD()){
+			return new Rational(a.getN()+b.getN(),a.getD());
+		}else{
+			return new Rational((a.getN()*b.getD())+(b.getN()*a.getD()),
+a.getD()*b.getD());
+		}
+	}
+```
