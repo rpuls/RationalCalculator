@@ -1,5 +1,6 @@
 ** Most of the examples in this text is taken from the RationCalculator that is found in this repository.**
-The published version of this calculator made by Rasmus Puls can be found on Google Play
+
+The published version of this calculator made by [Rasmus Puls](https://github.com/rpuls) can be found on Google Play
 
 [Rational Calculator](https://play.google.com/store/apps/details?id=dk.cphbusiness.template)
 
