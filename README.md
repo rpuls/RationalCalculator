@@ -1,3 +1,5 @@
+** Most of the examples in this text is taken from the RationCalculator that is found in this repository.**
+
 # Operator Overloading
 
 In Kotlin there is a fixed set of operators that can be used on types and classes in Kotlin. These operators have both a symbolic representation and a fixed precedence. 
