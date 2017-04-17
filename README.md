@@ -25,6 +25,17 @@ operator fun div(other: Rational) :Rational {
 In this function from the Rational Calculator we implement a division method to be able to divide rational numbers.
 
 ## Operator Overloading in Classes
+Operator overloading can be used to make our code more readable, by implementing the operator inside the class
+
+```kotlin
+class Complex(val i: Int, val j: Int) {
+    operator fun plus(c: Complex) = Complex(this.i + c.i, this.j + c.j)
+}
+```
+This enables us to use the plus operator on Complex the following way:
+```
+val c = Complex(1, 0) + Complex(0, 1) // = Complex(1, 1)
+``` 
 
 ## Operator Overloading in Extention functions
 
