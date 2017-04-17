@@ -160,7 +160,7 @@ System.out.println(i+j); //Evaluates to 3
 }
 ```
 
-Operator overloading might not be necessary in java as you can just simulate it using method overloading.
+Operator overloading might not be necessary in java as you can just simulate it using method overloading but if you are a mathematician or a physician then it would be the wrong notation and it might be dificult for them to make advanced calculations.
 
 Example - Overloading in java
 
