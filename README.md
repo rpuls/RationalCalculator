@@ -102,3 +102,11 @@ a[i_1, …, i_n] = b|	a.set(i_1, …, i_n, b)
 | --- | --- |
 a == b|	a?.equals(b) ?: b === null
 a != b|	!(a?.equals(b) ?: b === null)
+
+### Function invocation
+
+| symbol | something |
+| --- | --- |
+a(i)|	a.invoke(i)
+a(i, j)|	a.invoke(i, j)
+a(i_1, …, i_n)|	a.invoke(i_1, …, i_n)
