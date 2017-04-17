@@ -66,3 +66,22 @@ As stated previously overloading can only be done on the prefixed operators.
 !a|	a.not()
 a++|	a.inc()
 a–|	a.dec()
+
+##Binary operations
+
+| symbol | something |
+| --- | --- |
+a + b |	a.plus(b)
+a – b|	a.minus(b)
+a * b|	a.times(b)
+a / b	a.div(b)
+a % b	a.mod(b)
+a..b	a.rangeTo(b)
+a in b	b.contains(a)
+a !in b	!b.contains(a)
+a += b	a.plusAssign(b)
+a -= b	a.minusAssign(b)
+a *= b	a.timesAssign(b)
+a /= b	a.divAssign(b)
+a %= b	a.modAssign(b)
+
