@@ -37,5 +37,13 @@ This enables us to use the plus operator on Complex the following way:
 val c = Complex(1, 0) + Complex(0, 1) // = Complex(1, 1)
 ``` 
 
+Another simplified example would be to access a member list inside a member dataclass overloading the operator get().
+
+```data class MyMembers(val memberList: List<Member>) {
+ operator fun get(pos: Int):  = memberList[pos]
+}
+```
+Now we are able to access the memberlist using `MyMembers[4]` instead of `MyMembers.memberList[4]`
+
 ## Operator Overloading in Extention functions
 
