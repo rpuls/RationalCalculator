@@ -119,7 +119,9 @@ a(i_1, …, i_n)|	a.invoke(i_1, …, i_n)
 
 ## How does the compiler handle operator overloading?
 
-As we have already seen kotlin can do operator overloading, it does that by using the keyword "operator" in front of the function. So that when the compiler analyses yor code it looks for the operator keyword and then goes trhough some steps to determine which overloaded function to use.
+When doing operator Overloading, the we, as before mentioned, prefix the function with the `operator` keyword. 
+
+when the compiler analyses yor code and execute the `operator` keyword and then goes trhough some steps to determine which overloaded function to use.
 
 Example - Some operators that can be overloaded in kotlin
 
