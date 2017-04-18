@@ -120,25 +120,7 @@ a(i_1, …, i_n)|	a.invoke(i_1, …, i_n)
 
 ## Compared to Java
 
-First of all Java doesn’t support user defined operator overloading, they choose to exclude it from the language as they felt it was abused in c++ and produced less readable code and ruined the logic of the language. When you are a mathematician you might focus more on the equation than the actual code but if you want the correct notation like in physics or math then it might come in handy with operator overloading.
-
-Example - Operator overloading abuse
-
-```java
-public static void main(String[] args) {
-	String a = "cat";
-	String b = "dog";
-		
-	int i = 1;
-	int j = 2;
-		
-	//In math a+b == b+a but is violated in String concatenation.
-		
-	System.out.println(a+b==b+a); //Evaluates to false
-	System.out.println(i+j==j+i); //Evaluates to true
-}
-```
-Of course java uses operator overloading and here is an example.
+First of all Java doesn’t support user defined operator overloading, they choose to exclude it from the language as they felt it was abused in c++. In java It’s the compiler that magically overloads the + operator for String operands. The meaning of the + operator for Strings are defined by the language. Ints, floats, doubles etc. all have different binary representations and therefore adding two ints is a different operation in terms of bit manipulation. The addition depends on the nature of the objects being added but it’s defined on compile time and is not accessible for developers.
 
 Example - Operator overloading in java
 
@@ -160,7 +142,7 @@ System.out.println(i+j); //Evaluates to 3
 }
 ```
 
-Operator overloading might not be necessary in java as you can just simulate it using method overloading but if you are a mathematician or a physician then it would be the wrong notation and it might be dificult for them to make advanced calculations. It would make any equation less compact and less readable.
+Operator overloading might not be necessary in java as you can just simulate it using method overloading but if you are a mathematician or a physician it would make any equation less compact and less readable. But since the purpose of java is not to do advanced equations like f#, prolog etc. it's purpose is to be object oriented.
 
 Example - Overloading in java
 
