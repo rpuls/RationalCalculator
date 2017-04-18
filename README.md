@@ -142,7 +142,7 @@ System.out.println(i+j); //Evaluates to 3
 }
 ```
 
-Operator overloading might not be necessary in java as you can just simulate it using method overloading but if you are a mathematician or a physician it would make any equation less compact and less readable. But since the purpose of java is not to do advanced equations like f#, prolog etc. it's purpose is to be object oriented.
+Operator overloading might not be necessary in java as you can just simulate it using method overloading.
 
 Example - Overloading in java
 
