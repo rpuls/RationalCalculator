@@ -117,6 +117,42 @@ a(i)|	a.invoke(i)
 a(i, j)|	a.invoke(i, j)
 a(i_1, …, i_n)|	a.invoke(i_1, …, i_n)
 
+## How does the compiler handle operator overloading?
+
+As we have already seen kotlin can do operator overloading, it does that by using the keyword "operator" in front of the function. So that when the compiler analyses yor code it looks for the operator keyword and then goes trhough some steps to determine which overloaded function to use.
+
+Example - Some operators that can be overloaded in kotlin
+
+| Expression | Translated to |
+| --- | --- |
+a + b |	a.plus(b)
+a – b|	a.minus(b)
+a * b|	a.times(b)
+a / b|	a.div(b)
+a % b|	a.mod(b)
+a..b|	a.rangeTo(b)
+
+When the compiler processes an expression like a+b, it performs the following steps:
+
+1. Determines the type of b.
+2. Looks up a function a.plus(b) with the operator keyword and one parameter.
+3. If the function is absent or ambiguous, it’s a compilation error.
+4. If the function is present and it returns type R, the expression a+b has type R.
+
+Example - Operator Overloading in kotlin
+
+```kotlin
+operator fun plus(other: Rational) :Rational {
+   if(this.d==other.d){
+       return Rational((this.n+other.n),this.d)
+   }else{
+       return Rational(
+               (this.n * other.d + other.n * this.d),
+               (this.d * other.d)
+       )
+   }
+}
+```
 
 ## Compared to Java
 
@@ -171,39 +207,4 @@ public static void main(String[] args) {
 a.getD()*b.getD());
 		}
 	}
-```
-
-As we have already seen kotlin can do operator overloading, it does that by using the keyword "operator" in front of the function. So that when the compiler analyses yor code it looks for the operator keyword and then goes trhough some steps to determine which overloaded function to use.
-
-Example - Some operators that can be overloaded in kotlin
-
-| Expression | Translated to |
-| --- | --- |
-a + b |	a.plus(b)
-a – b|	a.minus(b)
-a * b|	a.times(b)
-a / b|	a.div(b)
-a % b|	a.mod(b)
-a..b|	a.rangeTo(b)
-
-When the compiler processes an expression like a+b, it performs the following steps:
-
-1. Determines the type of b.
-2. Looks up a function a.plus(b) with the operator keyword and one parameter.
-3. If the function is absent or ambiguous, it’s a compilation error.
-4. If the function is present and it returns type R, the expression a+b has type R.
-
-Example - Operator Overloading in kotlin
-
-```kotlin
-operator fun plus(other: Rational) :Rational {
-   if(this.d==other.d){
-       return Rational((this.n+other.n),this.d)
-   }else{
-       return Rational(
-               (this.n * other.d + other.n * this.d),
-               (this.d * other.d)
-       )
-   }
-}
 ```
