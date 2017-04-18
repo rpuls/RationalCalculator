@@ -173,7 +173,7 @@ a.getD()*b.getD());
 	}
 ```
 
-Ass we have already seen kotlin can do operator overloading, it does that by using the keyword "operator" in front of the function. So that when the compiler analyses yor code it looks for the operator keyword and then goes trhough some steps to determine which overloaded function to use.
+As we have already seen kotlin can do operator overloading, it does that by using the keyword "operator" in front of the function. So that when the compiler analyses yor code it looks for the operator keyword and then goes trhough some steps to determine which overloaded function to use.
 
 Example - Some operators that can be overloaded in kotlin
 
