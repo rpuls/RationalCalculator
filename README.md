@@ -120,7 +120,7 @@ a(i_1, …, i_n)|	a.invoke(i_1, …, i_n)
 
 ## Compared to Java
 
-First of all Java doesn’t support user defined operator overloading, they choose to exclude it from the language as they felt it was abused in c++. In java It’s the compiler that magically overloads the + operator for String operands. The meaning of the + operator for Strings are defined by the language. Ints, floats, doubles etc. all have different binary representations and therefore adding two ints is a different operation in terms of bit manipulation. The addition depends on the nature of the objects being added but it’s defined on compile time and is not accessible for developers.
+First of all Java doesn’t support user defined operator overloading, they choose to exclude it from the language as they felt it was abused in c++. In java It’s the compiler that magically overloads the + operator for String operands. The meaning of the + operator for Strings are defined by the language. Ints, floats, doubles etc. all have different binary representations and therefore adding two ints is a different operation in terms of bit manipulation. The addition depends on the nature of the objects being added but it’s defined on compile time and is not accessible for developers. For String operands the compiler generates code to concat strings, for int operands it generates code to add numbers.
 
 Example - Operator overloading in java
 
